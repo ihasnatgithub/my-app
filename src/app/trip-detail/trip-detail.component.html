@@ -1,0 +1,9 @@
+<div *ngIf="trip">
+  <h2>{{trip.staff}} Details</h2>
+  <div>id: {{trip.id}}</div>
+  <div>
+    <label for="trip-staff">Trip name: </label>
+    <input id="trip-name" [(ngModel)]="trip.staff" placeholder="staff">
+  </div>
+</div>
+    <button type="button" (click)="goBack()">go back</button>
